@@ -1,7 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
-const Button = ({ children }) => <button type="button">{children}</button>;
+const ButtonWrapper = styled.button`
+  background-color: red;
+  color: white;
+  padding: 6px 20px;
+  border-radius: 4px;
+  border: 0px;
+`;
+
+const Button = ({ children }) => <ButtonWrapper>{children}</ButtonWrapper>;
 
 Button.propTypes = {
   children: PropTypes.string.isRequired,
