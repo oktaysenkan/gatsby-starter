@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const ButtonWrapper = styled.button`
   background-color: red;
-  color: white;
+  color: ${(props) => props.theme.secondaryColor};
   padding: 6px 20px;
   border-radius: 4px;
   border: 0px;
